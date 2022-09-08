@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Created 9/6/22, Published -->
+    <link rel="icon" href="Img/moon-light-moon-background.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #000449, #0014ca, #0012B4, #000449);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    color: white;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+div.game {
+display: inline-block;
+width: 300px;
+height: 450px;
+border: 2px solid black;
+padding: 5px;
+}
+
+.play-link {
+    text-align: center;
+    color: white;
+    transition: 0.5s;
+}
+
+.play-link-div {
+    border: 3px solid white;
+    background: black;
+    transition: 0.5s;
+    text-align: center;
+    color: white;
+}
+
+.play-link-div:hover {
+filter: invert();
+}
+
+a {
+    color: #C3C3C3;
+}
+    </style>
+</head>
+<body>
+    <img src="Img/moon-light-moon-text.png" class="icon" style="position: absolute; z-index: 1; filter: blur(0.7px);">
+    <p style="text-align: center;"><img style="width: 450px; height: 100px; filter: blur(0.7px);" src="Img/moon-light-text-crop.png"></p>
+    <h2 class="title">Browse tons of games without limites. By <a href="http://www.silvereen.net">Silvereen Network</a></h2>
+    <br>
+    <br>
+    <div id="games">
+        <div class="game"><p class="title"><img src="src/icon/2048_logo.png" class="icon"></p><br><h2 class="title">2048</h2><br><h4 class="title">Use your arrow keys to move the tiles. Tiles with the same number merge into one when they touch. Add them up to reach 2048!</h4><br><div class="play-link-div"><p class="title"><a class="play-link" href="src/mlGames/2048/index.html" target="_blank">Play!</a></p></div></div>
+        <div class="game"><p class="title"><img src="src/icon/adr.png" class="icon"></p><br><h2 class="title">A Dark Room</h2><br><h4 class="title">You wake up in a mysterious dark room in the middle of nowhere. You should probably go out and gather some materials. <br></h4><br><div class="play-link-div"><p class="title"><a class="play-link" href="src/mlGames/adarkroom/index.html" target="_blank">Play!</a></p></div></div>
+        <div class="game"><p class="title"><img src="src/icon/asciispace.png" class="icon"></p><br><h2 class="title">Ascii Space</h2><br><h4 class="title">Explore a very cool space battle simulator where you have to dodge lasers and avoid the space enemies! <br><br></h4><br><div class="play-link-div"><p class="title"><a class="play-link" href="src/mlGames/asciispace/index.html" target="_blank">Play!</a></p></div></div>
+        <div class="game"><p class="title"><img src="src/icon/minecraftJE.png" class="icon"></p><br><h2 class="title">Minecraft Java</h2><br><h4 class="title">A re-make of the offical game Minecraft Java Edition. Build, mine, craft whatever your mind wants! <br><br></h4><br><div class="play-link-div"><p class="title"><a class="play-link" href="src/mlGames/minecraft/index.html" target="_blank">Play!</a></p></div></div>
+        <div class="game"><p class="title"><img src="src/icon/minecraftClassic.png" class="icon"></p><br><h2 class="title">Minecraft Classic</h2><br><h4 class="title">The old classic version of Minecraft version 0.30 in 2009. <br><br><br></h4><br><div class="play-link-div"><p class="title"><a class="play-link" href="src/mlGames/mc-classic/index.html" target="_blank">Play!</a></p></div></div>
+    </div>
+
+</body>
+</html>
